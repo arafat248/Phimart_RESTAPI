@@ -1,0 +1,314 @@
+[
+    {
+        "model": "product.Category",
+        "pk": 1,
+        "fields":{
+            "name": "Category 1",
+            "description":"Description for Category 1"
+        }
+    },
+    {
+        "model": "product.Category",
+        "pk": 2,
+        "fields":{
+            "name": "Category 2",
+            "description":"Description for Category 2"
+        }
+    },
+    {
+        "model": "product.Category",
+        "pk": 3,
+        "fields":{
+            "name": "Category 3",
+            "description":"Description for Category 3"
+        }
+    },
+    {
+        "model": "product.Category",
+        "pk": 4,
+        "fields":{
+            "name": "Category 4",
+            "description":"Description for Category 4"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":1,
+        "fields":{
+            "name": "Product 1",
+            "description": "Description for Product 1",
+            "price": 172.11,
+            "stokc": 250,
+            "image": null,
+            "category": 1,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":2,
+        "fields":{
+            "name": "Product 2",
+            "description": "Description for Product 2",
+            "price": 100.11,
+            "stokc": 200,
+            "image": null,
+            "category": 3,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":3,
+        "fields":{
+            "name": "Product 3",
+            "description": "Description for Product 3",
+            "price": 200.00,
+            "stokc": 25,
+            "image": null,
+            "category": 2,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":4,
+        "fields":{
+            "name": "Product 4",
+            "description": "Description for Product 4",
+            "price": 172.88,
+            "stokc": 350,
+            "image": null,
+            "category": 3,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":5,
+        "fields":{
+            "name": "Product 5",
+            "description": "Description for Product 5",
+            "price": 200.11,
+            "stokc": 850,
+            "image": null,
+            "category": 2,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":6,
+        "fields":{
+            "name": "Product 6",
+            "description": "Description for Product 6",
+            "price": 102.11,
+            "stokc": 20,
+            "image": null,
+            "category": 2,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":7,
+        "fields":{
+            "name": "Product 7",
+            "description": "Description for Product 7",
+            "price": 120.11,
+            "stokc": 145,
+            "image": null,
+            "category": 3,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":8,
+        "fields":{
+            "name": "Product 8",
+            "description": "Description for Product 8",
+            "price": 17.16,
+            "stokc": 250,
+            "image": null,
+            "category": 1,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":9,
+        "fields":{
+            "name": "Product 9",
+            "description": "Description for Product 9",
+            "price": 272.11,
+            "stokc": 310,
+            "image": null,
+            "category": 3,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":10,
+        "fields":{
+            "name": "Product 10",
+            "description": "Description for Product 10",
+            "price": 72.11,
+            "stokc": 257,
+            "image": null,
+            "category": 1,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":11,
+        "fields":{
+            "name": "Product 11",
+            "description": "Description for Product 11",
+            "price": 72.00,
+            "stokc": 250,
+            "image": null,
+            "category": 2,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":12,
+        "fields":{
+            "name": "Product 12",
+            "description": "Description for Product 12",
+            "price": 90.11,
+            "stokc": 280,
+            "image": null,
+            "category": 1,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":13,
+        "fields":{
+            "name": "Product 13",
+            "description": "Description for Product 13",
+            "price": 90.70,
+            "stokc": 252,
+            "image": null,
+            "category": 1,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":14,
+        "fields":{
+            "name": "Product 14",
+            "description": "Description for Product 14",
+            "price": 82.88,
+            "stokc": 50,
+            "image": null,
+            "category": 3,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":5,
+        "fields":{
+            "name": "Product 15",
+            "description": "Description for Product 15",
+            "price": 30.55,
+            "stokc": 80,
+            "image": null,
+            "category": 3,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":16,
+        "fields":{
+            "name": "Product 16",
+            "description": "Description for Product 16",
+            "price": 10.11,
+            "stokc": 200,
+            "image": null,
+            "category": 2,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":17,
+        "fields":{
+            "name": "Product 17",
+            "description": "Description for Product 17",
+            "price": 180.25,
+            "stokc": 45,
+            "image": null,
+            "category": 1,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":18,
+        "fields":{
+            "name": "Product 18",
+            "description": "Description for Product 18",
+            "price": 117.6,
+            "stokc": 20,
+            "image": null,
+            "category": 2,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":19,
+        "fields":{
+            "name": "Product 19",
+            "description": "Description for Product 19",
+            "price": 212.1,
+            "stokc": 300,
+            "image": null,
+            "category": 3,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    },
+    {
+        "model":"product.Product",
+        "pk":20,
+        "fields":{
+            "name": "Product 20",
+            "description": "Description for Product 20",
+            "price": 72.11,
+            "stokc": 257,
+            "image": null,
+            "category": 1,
+            "create_at": "2025-01-20:00:00",
+            "update_at": "2025-01-20:00:00"
+        }
+    }
+]
