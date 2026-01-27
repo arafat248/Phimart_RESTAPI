@@ -10,11 +10,13 @@ from product.serializer import product_serial, category_serial
 from rest_framework.mixins import CreateModelMixin, ListModelMixin
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.viewsets import ModelViewSet
+from rest_framework.pagination import PageNumberPagination
 
 ###### viewset #####
 class product_view(ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = product_serial
+    pagination_class = PageNumberPagination
     def destroy(self, request, *args, **kwargs):
         product = self.get_object()
         if product.stock > 10:
