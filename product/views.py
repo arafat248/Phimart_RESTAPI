@@ -35,6 +35,28 @@ class category_view(ModelViewSet):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
+###### viewset #####
+class product_view(ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = product_serial
+    def destroy(self, request, *args, **kwargs):
+        product = self.get_object()
+        if product.stock > 10:
+            return Response({'message': "stock more then 10 could not be deleted"})
+        self.perform_destroy(product)
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+class category_view(ModelViewSet):
+    queryset = Category.objects.annotate(product_count = Count('products')).all()
+    serializer_class = category_serial
+    def destroy(self, request, *args, **kwargs):
+        category = self.get_object()
+        if category.product_count >= 1:
+            return Response({'message':"have more product"})
+        self.perform_destroy(category)
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
 # Create your views here
 # class view_specific_product(APIView):
 #     def get(self, request, id):
