@@ -10,10 +10,14 @@ router.register('category', category_view)
 router.register('cartview', cart_view)
 router.register('cartitemview', cart_item_view,basename='cartitem')
 
+product_router = routers.NestedDefaultRouter(router, 'product', lookup = 'products')
+product_router.register('reviews',product_view, basename='pro_view')
+
 cart_router = routers.NestedDefaultRouter(router, 'cartitemview', lookup = 'cart')
 cart_router.register('items', cart_item_view, basename='cartitem')
 
 urlpatterns = [
     path('', include(router.urls)),
     path('', include(cart_router.urls)),
+    path('', include(product_router.urls))
 ]

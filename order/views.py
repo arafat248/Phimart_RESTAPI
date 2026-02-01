@@ -3,11 +3,13 @@ from rest_framework.viewsets import GenericViewSet, ModelViewSet
 from rest_framework.mixins import CreateModelMixin, RetrieveModelMixin, DestroyModelMixin
 from .serializer import cart_serial, cartitem_serial, addcartitem_serial, up_da_serial
 from .models import Cart, CartItem
+from rest_framework.permissions import DjangoModelPermissions
 
 # Create your views here.
 class cart_view(CreateModelMixin, RetrieveModelMixin, DestroyModelMixin, GenericViewSet):
     queryset = Cart.objects.all()
     serializer_class = cart_serial
+    permission_classes = [DjangoModelPermissions]
 
 class cart_item_view(ModelViewSet):
     http_method_names = ['get', 'post', 'patch', 'delete']
