@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Product, Category
+from .models import Product, Category, ProductImage
 
 class product_serial(serializers.ModelSerializer):
     class Meta:
@@ -11,3 +11,8 @@ class category_serial(serializers.ModelSerializer):
         model = Category
         fields = ['id', 'name', 'description', 'product_count']
     product_count = serializers.IntegerField(read_only = True)
+
+class image_serial(serializers.ModelSerializer):
+    class Meta:
+        model = ProductImage
+        fields = ['id', 'image']

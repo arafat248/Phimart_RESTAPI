@@ -100,3 +100,7 @@ class UpdateOrderSerial(serializers.ModelSerializer):
     class Meta:
         model = Order
         fields = ['status']
+
+class EmptySerial(serializers.Serializer):
+    pass
+        
