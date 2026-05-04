@@ -1,5 +1,6 @@
 from django.db import models
 from .validate import validate_file_size
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 class Category(models.Model):
@@ -23,4 +24,5 @@ class Product(models.Model):
     
 class ProductImage(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='images')
-    image = models.ImageField(upload_to="products/images/", validators = [validate_file_size])
+    image = CloudinaryField('image')
+    
